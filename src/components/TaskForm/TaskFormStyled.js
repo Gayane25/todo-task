@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TaskFormStyled = styled.div`
   padding-top: 56px;
-  
+
   font-size: 18px;
 
   h4 {
@@ -28,6 +28,8 @@ export const TaskFormStyled = styled.div`
         outline: none;
       }
       span {
+        background-color: #ffffff;
+
         position: absolute;
         top: 15px;
         right: 15px;
@@ -51,29 +53,31 @@ export const TaskFormStyled = styled.div`
       font-weight: 500;
     }
   }
-  @media (min-width:375px) and (max-width:376px){
+  @media (min-width: 375px) and (max-width: 376px) {
     form {
       flex-direction: column;
       button {
-        margin-left:auto; 
+        margin-left: auto;
         margin-top: 16px;
       }
       div {
         /* flex-direction: column; */
-        width:327px;
-      input {
-        width: 306px;
-        font-size: 12px;
-        padding-left:none;
+        width: 327px;
+        overflow: clip;
+        input {
+          width: 306px;
+          font-size: 12px;
+          padding-left: none;
+        }
+        .notValid {
+          font-size: 12px;
+        }
+        span {
+          padding-left: 10px;
+          padding-right: 10px;
+          right: 2px;
+        }
       }
-      .notValid {
-        font-size: 12px;
-      }
-      
-      }
-     
     }
   }
-
-
 `;

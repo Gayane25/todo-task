@@ -1,14 +1,16 @@
 import React from "react";
-import TaskItem from "../TaskItem/TaskItem";
+import TaskItem from "../TaskItem";
 import { TaskListStyled } from "./TaskListStyled";
 
-function TaskList({state, dispatch}) {
-  const tasks= state.hiddedCompleted ? state.tasks.filter((task) => !task.completed): state.tasks
+function TaskList({ state, dispatch }) {
+  const tasks = state.hiddedCompleted
+    ? state.tasks.filter((task) => !task.completed)
+    : state.tasks;
   return (
     <TaskListStyled>
-      { tasks.map(task=> 
-        <TaskItem key={task.id} task={task} dispatch={dispatch}/>
-      )}
+      {tasks.map((task) => (
+        <TaskItem key={task.id} task={task} dispatch={dispatch} />
+      ))}
     </TaskListStyled>
   );
 }

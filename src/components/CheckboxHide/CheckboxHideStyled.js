@@ -6,7 +6,5 @@ export const Checkbox = styled.div`
   label {
     right: 0;
     font-size: 1.125rem;
-  
-  };
-
+  }
 `;

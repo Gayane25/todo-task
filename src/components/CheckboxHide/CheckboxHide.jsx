@@ -1,6 +1,6 @@
 import React from "react";
 import { Checkbox } from "./CheckboxHideStyled";
-import { SHOW_COMPLETED } from "../../state/state";
+import { SHOW_COMPLETED } from "../../state";
 
 function CheckboxHide({ state, dispatch }) {
   return (

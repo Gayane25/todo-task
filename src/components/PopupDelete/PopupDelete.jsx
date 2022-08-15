@@ -1,13 +1,12 @@
 import React from "react";
 import { PopupDeleteStyled } from "./PopupDeleteStyled";
-import { DELETE_TASK} from "../../state/state";
-import { createPortal } from 'react-dom';
-function PopupDelete({id, setOpenModal, dispatch}) {
+import { DELETE_TASK } from "../../state";
+import { createPortal } from "react-dom";
+function PopupDelete({ id, setOpenModal, dispatch }) {
+  const deleteTask = () => {
+    dispatch({ type: DELETE_TASK, id: id });
+  };
 
-  const deleteTask =()=>{
-    dispatch({type:DELETE_TASK, id:id})
-}
-  console.log(id)
   return createPortal(
     <PopupDeleteStyled>
       <div>
@@ -15,7 +14,8 @@ function PopupDelete({id, setOpenModal, dispatch}) {
         <span onClick={deleteTask}>Yes</span>
         <span onClick={() => setOpenModal(false)}>No</span>
       </div>
-    </PopupDeleteStyled>, document.getElementById("modalik")
+    </PopupDeleteStyled>,
+    document.getElementById("modalik")
   );
 }
 

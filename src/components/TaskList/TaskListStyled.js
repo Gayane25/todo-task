@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-export const TaskListStyled=styled.div`
-padding-top: 62px;
+export const TaskListStyled = styled.div`
+  padding-top: 62px;
 
-
-& :last-child {
+  & :last-child {
     border-bottom: none;
-}
-
+  }
 `;
