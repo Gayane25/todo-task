@@ -53,7 +53,7 @@ export const TaskFormStyled = styled.div`
       font-weight: 500;
     }
   }
-  @media (min-width: 375px) and (max-width: 376px) {
+  @media (min-width: 375px) and (max-width: 391px) {
     form {
       flex-direction: column;
       button {
@@ -65,7 +65,7 @@ export const TaskFormStyled = styled.div`
         width: 327px;
         overflow: clip;
         input {
-          width: 306px;
+          width: 305px;
           font-size: 12px;
           padding-left: none;
         }

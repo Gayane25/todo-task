@@ -8,7 +8,7 @@ export const TaskItemStyled = styled.div`
   border-bottom: 1px solid #e5e5e5;
   width: 100%;
 
-  @media (min-width: 375px) and (max-width: 376px) {
+  @media (min-width: 375px) and (max-width: 391px) {
     width: 327px;
   }
 

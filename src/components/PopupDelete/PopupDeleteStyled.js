@@ -30,7 +30,7 @@ export const PopupDeleteStyled = styled.div`
       cursor: pointer;
     }
   }
-  @media (min-width: 375px) and (max-width: 376px) {
+  @media (min-width: 375px) and (max-width: 391px) {
     div {
       width: 324px;
       height: 140px;

@@ -21,7 +21,7 @@ justify-content: center;  */
     letter-spacing: 0.002em;
     line-height: 54px;
   }
-  @media (min-width: 375px) and (max-width: 376px) {
+  @media (min-width: 375px) and (max-width: 391px) {
     padding-top: 120px;
     h4 {
       font-size: 14px;
